@@ -34,6 +34,7 @@ namespace WebApplication1.Controllers
             ViewData["PostData"] = value1 + "+" + value2 + "=" + (int.Parse(value1) + int.Parse(value2)).ToString();
             ViewData["PostData2"] = (int.Parse(value1) + int.Parse(value2)).ToString();
             ViewBag.num = int.Parse(value1) + int.Parse(value2);
+            ViewBag.name = "taira";
             return View();
         }
     }
